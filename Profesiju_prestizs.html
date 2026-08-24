@@ -48,7 +48,8 @@ h1{
   margin:0;line-height:1.05;color:var(--dziļi);text-transform:uppercase;
 }
 .apakšvirsraksts{margin:7px 0 0;font-size:clamp(12px,1.15vw,17px);letter-spacing:.03em;color:#5c6670;}
-.autore{margin:10px 0 0;font-size:clamp(11.5px,1vw,14px);color:#8d97a1;letter-spacing:.02em;max-width:640px;line-height:1.35;}
+.autore b{font-weight:700;color:#6f7c88;}
+.autore{margin:10px 0 0;font-size:clamp(11.5px,1vw,14px);color:#8d97a1;letter-spacing:.02em;max-width:720px;line-height:1.4;}
 .logo{margin-left:auto;width:clamp(74px,6vw,100px);height:auto;flex-shrink:0;position:relative;z-index:2;}
 
 /* ---------- cilnes ---------- */
@@ -267,7 +268,7 @@ input[type=range]{width:100%;height:30px;accent-color:#1F4E79;cursor:pointer;}
     <div class="virsraksts">
       <h1>Profesiju&nbsp; prestižs</h1>
       <p class="apakšvirsraksts">Stereotipi, atalgojums un darba jēga · diskusija 7.–9. klasei</p>
-      <p class="autore">Interaktīvo rīku sagatavoja Jaunmārupes pamatskolas pedagoģe-karjeras konsultante Jolanta Grosberga-Gernere</p>
+      <p class="autore">Interaktīvo rīku sagatavoja Jaunmārupes pamatskolas pedagoģe-karjeras konsultante<br><b>Jolanta Grosberga-Gernere</b></p>
     </div>
     <img class="logo" id="logo" alt="Jaunmārupes pamatskolas logo">
   </header>
@@ -803,7 +804,7 @@ function rādītProfesiju(i){
       '<div class="fakts"><span class="l">Izglītība</span><span class="v" style="font-size:14.5px">'+p.izgl+'</span></div>'+
       '<div class="fakts"><span class="l">Atalgojums (bruto)</span><span class="v">'+p.alga+'</span></div>'+
       '<div class="fakts"><span class="l">Pieprasījums Latvijā</span><span class="v">'+p.piepr+'</span></div>'+
-      '<div class="fakts platā"><span class="l">Bez šī darba</span><span class="v" style="font-size:14px;font-weight:400;line-height:1.35;display:block">'+p.bez+'</span></div>'+
+      '<div class="fakts platā"><span class="l">Ja nebūs šīs profesijas</span><span class="v" style="font-size:14px;font-weight:400;line-height:1.35;display:block">'+p.bez+'</span></div>'+
     '</div>'+
     '<div class="stereo"><b>Izplatītākais stereotips</b>'+p.mīts+
       '<span class="real"><b style="display:inline;font-size:12px">Kā ir patiesībā · </b>'+p.reāl+'</span></div>'+
